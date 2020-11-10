@@ -14,7 +14,8 @@
 		9D2C387A255B088900C1DBE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C3878255B088900C1DBE6 /* Main.storyboard */; };
 		9D2C387C255B088D00C1DBE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C387B255B088D00C1DBE6 /* Assets.xcassets */; };
 		9D2C387F255B088D00C1DBE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C387D255B088D00C1DBE6 /* LaunchScreen.storyboard */; };
-		9D2C388A255B0EDD00C1DBE6 /* Cats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C3889255B0EDD00C1DBE6 /* Cats.swift */; };
+		9D2C388A255B0EDD00C1DBE6 /* CatsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C3889255B0EDD00C1DBE6 /* CatsAPI.swift */; };
+		9D2C388C255B167100C1DBE6 /* ResponseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C388B255B167100C1DBE6 /* ResponseAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		9D2C387B255B088D00C1DBE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D2C387E255B088D00C1DBE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D2C3880255B088D00C1DBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D2C3889255B0EDD00C1DBE6 /* Cats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cats.swift; sourceTree = "<group>"; };
+		9D2C3889255B0EDD00C1DBE6 /* CatsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsAPI.swift; sourceTree = "<group>"; };
+		9D2C388B255B167100C1DBE6 /* ResponseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAPI.swift; sourceTree = "<group>"; };
 		C00B757BC4C8A8B6CFECE4B0 /* Pods-CatsMoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsMoya.debug.xcconfig"; path = "Target Support Files/Pods-CatsMoya/Pods-CatsMoya.debug.xcconfig"; sourceTree = "<group>"; };
 		E124E0262AB5B37F9887E2D4 /* Pods_CatsMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,7 +99,8 @@
 		9D2C3887255B0D3100C1DBE6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9D2C3889255B0EDD00C1DBE6 /* Cats.swift */,
+				9D2C3889255B0EDD00C1DBE6 /* CatsAPI.swift */,
+				9D2C388B255B167100C1DBE6 /* ResponseAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,9 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2C388A255B0EDD00C1DBE6 /* Cats.swift in Sources */,
+				9D2C388A255B0EDD00C1DBE6 /* CatsAPI.swift in Sources */,
 				9D2C3877255B088900C1DBE6 /* ViewController.swift in Sources */,
 				9D2C3873255B088900C1DBE6 /* AppDelegate.swift in Sources */,
+				9D2C388C255B167100C1DBE6 /* ResponseAPI.swift in Sources */,
 				9D2C3875255B088900C1DBE6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

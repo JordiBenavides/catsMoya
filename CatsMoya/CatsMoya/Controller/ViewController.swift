@@ -6,13 +6,27 @@
 //  Copyright © 2020 Jordi Milla Catalan. All rights reserved.
 //
 
+import Foundation
 import UIKit
+import Moya
+
 
 class ViewController: UIViewController {
 
+    let provider = MoyaProvider<CatsAPI>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
+        provider.request(.cats) { [weak self] result in
+
+          switch result {
+          case .success(let response):
+            print("Success")
+          case .failure:
+            print("Error")
+          }
+        }
     }
 
 
