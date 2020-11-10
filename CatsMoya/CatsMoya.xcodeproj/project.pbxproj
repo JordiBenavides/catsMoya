@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		9D2C387A255B088900C1DBE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C3878255B088900C1DBE6 /* Main.storyboard */; };
 		9D2C387C255B088D00C1DBE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C387B255B088D00C1DBE6 /* Assets.xcassets */; };
 		9D2C387F255B088D00C1DBE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2C387D255B088D00C1DBE6 /* LaunchScreen.storyboard */; };
+		9D2C388A255B0EDD00C1DBE6 /* Cats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2C3889255B0EDD00C1DBE6 /* Cats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9D2C387B255B088D00C1DBE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D2C387E255B088D00C1DBE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D2C3880255B088D00C1DBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2C3889255B0EDD00C1DBE6 /* Cats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cats.swift; sourceTree = "<group>"; };
 		C00B757BC4C8A8B6CFECE4B0 /* Pods-CatsMoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsMoya.debug.xcconfig"; path = "Target Support Files/Pods-CatsMoya/Pods-CatsMoya.debug.xcconfig"; sourceTree = "<group>"; };
 		E124E0262AB5B37F9887E2D4 /* Pods_CatsMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,9 +73,10 @@
 		9D2C3871255B088900C1DBE6 /* CatsMoya */ = {
 			isa = PBXGroup;
 			children = (
+				9D2C3887255B0D3100C1DBE6 /* Model */,
+				9D2C3886255B0C8400C1DBE6 /* Controller */,
 				9D2C3872255B088900C1DBE6 /* AppDelegate.swift */,
 				9D2C3874255B088900C1DBE6 /* SceneDelegate.swift */,
-				9D2C3876255B088900C1DBE6 /* ViewController.swift */,
 				9D2C3878255B088900C1DBE6 /* Main.storyboard */,
 				9D2C387B255B088D00C1DBE6 /* Assets.xcassets */,
 				9D2C387D255B088D00C1DBE6 /* LaunchScreen.storyboard */,
@@ -82,13 +85,36 @@
 			path = CatsMoya;
 			sourceTree = "<group>";
 		};
+		9D2C3886255B0C8400C1DBE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C3888255B0D4000C1DBE6 /* Cell */,
+				9D2C3876255B088900C1DBE6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D2C3887255B0D3100C1DBE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D2C3889255B0EDD00C1DBE6 /* Cats.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D2C3888255B0D4000C1DBE6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E301FC89E288FC326374A7F5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C00B757BC4C8A8B6CFECE4B0 /* Pods-CatsMoya.debug.xcconfig */,
 				138829FFBC5A6D1DF2BC1AA0 /* Pods-CatsMoya.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2C388A255B0EDD00C1DBE6 /* Cats.swift in Sources */,
 				9D2C3877255B088900C1DBE6 /* ViewController.swift in Sources */,
 				9D2C3873255B088900C1DBE6 /* AppDelegate.swift in Sources */,
 				9D2C3875255B088900C1DBE6 /* SceneDelegate.swift in Sources */,
