@@ -14,7 +14,7 @@ import Moya
 class ViewController: UIViewController {
 
     let provider = MoyaProvider<CatsAPI>()
-    
+    var data: [Cats]?
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -22,13 +22,12 @@ class ViewController: UIViewController {
 
           switch result {
           case .success(let response):
-            print("Success")
+            let array: [Cats] = try! response.map(ResponseAPI.self).all
+            self?.data = array
           case .failure:
             print("Error")
           }
         }
     }
-
-
 }
 

@@ -8,23 +8,21 @@
 
 import Foundation
 
-struct Response: Codable {
+struct ResponseAPI: Codable {
     let all:[Cats]
 }
 
 struct Cats: Codable {
     let _id: String
     let text: String
-    let user: User
-    let upvotes: Int
+    let user: User?
 }
 
 struct User: Codable {
-    let _id:String
+    let _id: String
     let name: Name
 }
 struct Name: Codable {
     let first: String
     let last: String
 }
-
