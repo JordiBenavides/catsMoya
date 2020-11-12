@@ -16,27 +16,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKJ-Yj-4GZ">
-                        <rect key="frame" x="20" y="0.0" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKJ-Yj-4GZ">
+                        <rect key="frame" x="20" y="10" width="310" height="9.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx5-P1-eZU">
-                        <rect key="frame" x="20" y="39" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx5-P1-eZU">
+                        <rect key="frame" x="20" y="29.5" width="310" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Jx5-P1-eZU" secondAttribute="trailing" constant="288" id="3Uj-Mt-T89"/>
                     <constraint firstItem="Jx5-P1-eZU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="4yS-ob-XBA"/>
-                    <constraint firstItem="sKJ-Yj-4GZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9mQ-IX-i5H"/>
-                    <constraint firstAttribute="bottom" secondItem="Jx5-P1-eZU" secondAttribute="bottom" id="Ch0-U0-ma9"/>
-                    <constraint firstItem="Jx5-P1-eZU" firstAttribute="top" secondItem="sKJ-Yj-4GZ" secondAttribute="bottom" constant="18" id="IjO-rJ-N7b"/>
-                    <constraint firstAttribute="trailing" secondItem="sKJ-Yj-4GZ" secondAttribute="trailing" constant="288" id="dax-E8-619"/>
+                    <constraint firstItem="sKJ-Yj-4GZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9mQ-IX-i5H"/>
+                    <constraint firstAttribute="trailing" secondItem="Jx5-P1-eZU" secondAttribute="trailing" constant="20" id="BwT-FT-WoW"/>
+                    <constraint firstAttribute="bottom" secondItem="Jx5-P1-eZU" secondAttribute="bottom" constant="10" id="Ch0-U0-ma9"/>
+                    <constraint firstItem="Jx5-P1-eZU" firstAttribute="top" secondItem="sKJ-Yj-4GZ" secondAttribute="bottom" constant="10" id="OkI-pL-CdB"/>
                     <constraint firstItem="sKJ-Yj-4GZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="nvK-fC-n7c"/>
+                    <constraint firstAttribute="trailing" secondItem="sKJ-Yj-4GZ" secondAttribute="trailing" constant="20" id="zxA-WZ-kgd"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

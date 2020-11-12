@@ -18,11 +18,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let provider = MoyaProvider<CatsAPI>()
     var data: [Cats]?
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
         table.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
+        
         provider.request(.cats) { [weak self] result in
 
           switch result {
