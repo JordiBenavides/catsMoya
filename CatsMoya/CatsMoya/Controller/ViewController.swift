@@ -21,12 +21,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setTable()
+        requestMovies()
+        
+    }
+    
+    func setTable(){
+        
         table.delegate = self
         table.dataSource = self
         table.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
+    }
+    
+    func requestMovies(){
         
         provider.request(.cats) { [weak self] result in
-
           switch result {
           case .success(let response):
             let array: [Cats] = try! response.map(ResponseAPI.self).all
@@ -37,6 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
           }
         }
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return data?.count ?? 0
@@ -45,8 +55,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as? CustomTableViewCell
-        cell?.labelId.text = data?[indexPath.row]._id
-        cell?.labelText.text = data?[indexPath.row].text
+        let cats = data?[indexPath.row]
+               cell?.configure(cats: cats)
         
         return cell ?? UITableViewCell()
     }

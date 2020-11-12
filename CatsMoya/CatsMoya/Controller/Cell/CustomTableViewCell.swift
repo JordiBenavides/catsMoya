@@ -10,19 +10,25 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var labelId: UILabel!
     @IBOutlet weak var labelText: UILabel!
     
+    var data: Cats?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+     
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
+    func configure(cats:Cats?){
+        
+        self.data = cats
+        labelId.text = self.data?._id
+        labelText.text = self.data?.text
+    }
 }
